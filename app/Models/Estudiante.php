@@ -15,15 +15,23 @@ class Estudiante extends Model
    
 
 
-    public function cursos(): HasMany
+    public function cursos(): BelongsToMany
     {
-        return $this->hasMany(Curso::class);
+        return $this->belongsToMany(Curso::class);
     }
 
             
     use HasFactory;
 
-    protected $fillable = ['name','email','date_of_birth','phone',  /* otros atributos fillable */];
+    protected $fillable = [
+        
+        'name',
+        'email',
+        'date_of_birth',
+        'phone', 
+         /* otros atributos fillable */
+                          
+        ];
 
     
     

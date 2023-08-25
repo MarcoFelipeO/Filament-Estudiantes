@@ -16,7 +16,9 @@ class Curso extends Model
 
 
         'name',
+        'estudiante_id',
         'type', 
+        
         
         /* otros atributos fillable */
     
@@ -30,7 +32,9 @@ class Curso extends Model
     {
         return $this->belongsTo(Estudiante::class);
     }
- 
+    
+
+    
 
     
 

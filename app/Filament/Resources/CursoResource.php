@@ -38,7 +38,7 @@ class CursoResource extends Resource
                     'lenguaje' => 'Lenguaje',
                     'fisica' => 'Fisica',
                 ]),
-                Forms\Components\Select::make('estudiantes_id')
+                Forms\Components\Select::make('estudiante_id') //aqui me daba error por tener estudiantes en vez de estudiante_id
                 ->relationship('estudiante', 'name')
                 ->searchable()
                 ->preload()
@@ -70,7 +70,8 @@ class CursoResource extends Resource
                 //
 
                 Tables\Columns\TextColumn::make('name'),
-                Tables\Columns\TextColumn::make('type') ,
+                Tables\Columns\TextColumn::make('type'),
+                Tables\Columns\TextColumn::make('estudiante.name'),
 
 
             ])
