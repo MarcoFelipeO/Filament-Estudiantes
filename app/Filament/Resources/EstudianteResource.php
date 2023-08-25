@@ -19,6 +19,14 @@ class EstudianteResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
+   // protected static ?string $navigationLabel = 'Mis Estudiantes'; // Personalizo la etiqueta del elemento de navegacion, 
+                                                                // 
+
+  /*     public static function getNavigationLabel(): string  Aqui podemos reemplazar la etiqueta de navegacion por un url
+    {                                                                   de nuestra carpeta, ejemplo colocar su ubicacion 
+        return __('filament/resources/EstudianteResource.php');         en VS.
+    }      */                                                            
+
     public static function form(Form $form): Form
     {
         return $form
