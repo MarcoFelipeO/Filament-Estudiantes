@@ -19,13 +19,27 @@ class EstudianteResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
+   //  protected static ?string $navigationGroup = 'Shop'; //cambia el nombre de etiqueta de navegacion y crea una
+                                                          //  etiqueta dentro de la otra 
+
+    
    // protected static ?string $navigationLabel = 'Mis Estudiantes'; // Personalizo la etiqueta del elemento de navegacion, 
                                                                 // 
 
   /*     public static function getNavigationLabel(): string  Aqui podemos reemplazar la etiqueta de navegacion por un url
     {                                                                   de nuestra carpeta, ejemplo colocar su ubicacion 
         return __('filament/resources/EstudianteResource.php');         en VS.
-    }      */                                                            
+    }      */                                                
+    
+    
+    // protected static ?string $slug = 'estudiante'; //crea en el proyecto un url en la etiqueta y alli es donde 
+                                                      // te redirige
+
+
+    
+        
+
+
 
     public static function form(Form $form): Form
     {
@@ -87,6 +101,18 @@ class EstudianteResource extends Resource
             //
         ];
     }
+
+    
+    //////////
+
+
+    
+
+    //////////
+
+
+
+
     
     public static function getPages(): array
     {
